@@ -1,0 +1,36 @@
+---
+# Sequence are values listed in specific Order. In YAML Sequence starts with dash(-) and space.
+# Sequence is equivalent to List in Programming languages.
+# Block Style uses Spaces to structure the List.
+# In Flow Style, user can write sequence in single line within square brackets.
+# User can embed a sequence in another sequence.
+
+# List sequence in Block Style
+applications:
+  - Loans
+  - Creadit Cards
+  - Saving Accounts
+  - Current Accounts
+deparments:
+  - Loan Recovery
+  - Insurance
+  - Security
+
+
+# List Sequence in Flow Style
+locations: [New York, Chicago, Seattle, "Denver",5.5]
+
+# Nested/Embedded Sequences
+Product:
+  - Loans:
+    - Home Loan
+    - Education Loan
+  - Creadit Cards:
+    - VIP Cards
+    - Student Cards
+  - Saving Accounts:
+    - Family Account
+    - Individual Account
+  - Current:
+    - LLP
+    - Pvt. Ltd

@@ -1,0 +1,48 @@
+---
+# Anchors allows you to reduce repeat Syntax and extend existing data nodes.
+# You can place Anchors (&) on an entity to mark a multi-line section. You can then use an Alias (*) call that anchor later in the document to reference that section.
+# Clear meaning is $ this is Creating Function.
+# Clear meaning is * this is Calling the Function.
+
+# Without Achors Using Creating YAML file
+definitions: 
+  steps:
+    - step:
+        name: Build and test
+        script:
+          - mvn package
+        artifacts:
+          - target/**
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: Build and test
+          script:
+            - mvn package
+          artifacts:
+            - target/**
+    master:
+      - step:
+          name: Build and test
+          script:
+            - mvn package
+          artifacts:
+            - target/*
+
+# With Using Achors Using Creating YAML file
+---
+definitions: 
+  steps:
+    - step: &build-test # Here Creating Function.
+        name: Build and test
+        script:
+          - mvn package
+        artifacts:
+          - target/**
+pipelines:
+  branches:
+    develop:
+      - step: *build-test
+    master:
+      - step: *build-test

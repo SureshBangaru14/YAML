@@ -1,0 +1,15 @@
+---
+name: John Mclean
+language: English
+Birth Year: 1785
+Birth Date: "11"
+DOB: 11-03-1785
+Life Time: 74.8
+Died_Hex: 0x745
+Died_Octal: 03505
+good man: true
+American: Yes
+null_vale: null
+sex:
+
+# when we convert yaml to json we will get like this {"name": "John Mclean","language": "English","Birth Year": 1785,"Birth Date": "11","DOB": "11-03-1785","Life Time": 74.8,"Died_Hex": 1861,"Died_Octal": 1861,"good man": true,"American": "Yes","null_vale": null,"sex": null}

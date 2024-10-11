@@ -1,0 +1,14 @@
+---
+# Keys can be Complex in YAML. Complex Keys means where the Key is multi line String.
+#  “?” followed by space is used to define the start of Complex Keys.
+
+? This is key with
+  multiple Lines
+  : and this is the value of this complex key
+
+? - dev
+  - pre-production
+  - production
+: - https://example.dev.com
+  - https://example.pre-prod.com
+  - https://example.prod.com

@@ -1,0 +1,12 @@
+---
+# YAML follows the Key-Value pair combination for single entity/object.
+
+# Key : Value
+
+# Key Must be a string Data type.
+
+# value can hold any data type(Scalar,Collection).
+# Scalar means hold in single value.
+# Collection means batch of values hold
+# Scalar Data types : String, Number, Boolen, Null
+# Collection Data types : List, Dict

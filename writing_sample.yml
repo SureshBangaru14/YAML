@@ -1,0 +1,36 @@
+---
+# Indentation of WhiteSpace used to denote Structure. This is similar to Python.
+# Basic Structure of YAML is Map. You may call is dictionary, Hash, depending on your favorite programming language.
+# - This means Array.
+
+# Single Student Data.
+# This Dict convert yaml Below {"Student": {"Name": "Suresh Bangaru","Age": 18,"Class": "X","Subjects": "Math English Hindi"}}
+Student:
+    Name: Suresh Bangaru
+    Age: 18
+    Class: X
+    Subjects:
+      Math
+      English
+      Hindi
+
+
+# Multi Students Data.
+# This Dict of list to convert yaml Below {"Students": [{"Name": "Suresh Bangaru","Age": 18,"Class": "X","Subjects": "Math English Hindi"},{"Name": "Anush Bangaru","Age": 18,"Class": "iiX","Subjects": "Math English Hindi"}]}
+
+Students:
+    - Name: Suresh Bangaru
+      Age: 18
+      Class: X
+      Subjects:
+        Math
+        English
+        Hindi
+
+    - Name: Anush Bangaru
+      Age: 18
+      Class: iiX
+      Subjects:
+        Math
+        English
+        Hindi

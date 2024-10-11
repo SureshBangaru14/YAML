@@ -1,0 +1,13 @@
+---
+# YAML follows the Key-Value pair combination for single entity/object.
+FirstName: Suresh 
+# User can provide the Space in Name of Key.
+Last Name : Bangaru
+Age: 30
+Height: 5.6
+#  User can use the Single or Double Quotes in Key Name.
+City: 'Khammam:' # if we mention colon that value conside Key and getting error.
+Village: "YSR Colony"
+# Key can’t be repeated within the same space in YAML Because YAML is case sensitive Lamguage.
+# FirstName: Suresh repeated keys are not allowed
+age: 32
